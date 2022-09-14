@@ -1,0 +1,8 @@
+<a [routerLink]="['']">[Back]</a>
+
+<ul *ngIf="items.length > 0">
+  <li class="cart-item" *ngFor="let item of items">
+    <span>{{ item.name }} </span>
+    <span>{{ item.price | currency }}</span>
+  </li>
+</ul>
